@@ -47,7 +47,7 @@ Just set your model attributes using standard values. The database will be updat
 
 
 ----------
-Node.js Calls for hight performance calls.
+Node.js Calls for high performance calls.
 Just call any method using the following url:
 
         URL: /index.php/CONTROLLER/node_jsfile/
