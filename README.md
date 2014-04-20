@@ -20,13 +20,15 @@ class Blogmodel extends CI_Model {
 
  On you model just use the onfire_ prefix on a specific method, this will enable the method in the controler using Reflexion the output will be a json encoded object of the return value of the model method.
 
- 	MODEL:
+MODEL
+
   function onfire_simplearray()
     {
         return Array(1,2,4,5,6,7);
     } 
 
 CONTROLER
+
     public function __construct()
        {
             parent::__construct();
