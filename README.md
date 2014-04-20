@@ -53,7 +53,8 @@ Just call any method using the following url:
         URL: /index.php/CONTROLLER/node_jsfile/
 
 This will be load a jsfile.js in the CONTROLLER folder at the node folder.
-The return value will be "echo"
+The return value will be "echo" Example:
+        /application/node/CONTROLLER/jsfile.js
 
 
 
