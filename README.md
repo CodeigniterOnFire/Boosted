@@ -6,8 +6,9 @@ Automatically-generated database like django, Automatic json api from models, Au
 ----------
 Database:
 Just set your model attributes using standard values. The database will be updated at the first load or at attributes changes detections. Example:
-class Blogmodel extends CI_Model {
 
+
+class Blogmodel extends CI_Model {
     var $title   = '';
     var $content = '';
     var $date    = "2012-09-09";
