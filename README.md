@@ -48,7 +48,7 @@ Just set your model attributes using standard values. The database will be updat
 
 ----------
 Node.js  for high performance calls.
-On your CONTROLLER just use the node_jsfile to name a  method. Call any node file using the following url:
+In your CONTROLLER just use "node_jsfile" to name a  method. The node file can be called using the following url:
 
         URL: /index.php/CONTROLLER/node_jsfile/
 
@@ -56,7 +56,7 @@ This will be load a jsfile.js in the CONTROLLER folder at the node folder.
 
  /application/node/CONTROLLER/jsfile.js
 
-The node std output  will be passed as the first argument to the node_jsfile method in the CONTROLLER:
+The node std output  will be passed as the first argument of the "node_jsfile" method in the CONTROLLER:
        
 
 
