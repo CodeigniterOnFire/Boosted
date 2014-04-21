@@ -1,7 +1,7 @@
-Boosted
+CodeigniterOnFire Boosted 
 =======
 
-Automatically-generated database like django, Automatic json api from models, Automatic Node.js calls from Controlers.
+Automatically-generated database like django, Automatic json api from models, Automatic Node.js calls from Controlers to support high performance and complex processing.
 
 ----------
 Database:
