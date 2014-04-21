@@ -1,7 +1,7 @@
 CodeigniterOnFire Boosted 
 =======
 
-Automatically-generated database like django, Automatic json api from models, Automatic Node.js calls from Controlers to support high performance and complex processing.
+Automatically-generated database like django, Automatic json API from models, Automatic Node.js calls from Controllers to support high performance and complex processing.
 
 ----------
 Database:
@@ -10,10 +10,11 @@ Just set your model attributes using standard values. The database will be updat
     MODEL
 
         class Blogmodel extends CI_Model {
-            var $title   = '';
-            var $content = '';
-            var $date    = "2012-09-09";
-            var votes = 0;
+            var $title   = ''; //  type  TEXT 
+            var $content = ''; //  type  TEXT
+            var $date    = "2012-09-09"; //  type  DATETIME
+            var votes = 0; //  type  DOUBLE
+
         // ...
         }
 
@@ -21,7 +22,7 @@ Just set your model attributes using standard values. The database will be updat
  ----------
  JSON API
 
- On your MODEL just use the onfire_ prefix on a  method, this will enable the method in the controller using Reflexion and Clousure. The output will be a json encoded object of the return value of the model method.
+ On your MODEL just use the onfire_  prefix on a  method, this will enable the method in the controller using Reflexion and Closure. The output will be a JSON encoded return value of the model method.
 
     MODEL
 
@@ -43,21 +44,20 @@ Just set your model attributes using standard values. The database will be updat
         URL: /index.php/CONTROLLER/onfire_simplearray/
 
 
-    *Important: The model must be loaded in the contructor.
+    *Important: The model must be loaded in the constructor.
 
 
 ----------
 Node.js  for high performance calls.
-In your CONTROLLER just use "node_jsfile" to name a  method. The node file can be called using the following url:
+In your CONTROLLER just use "node_jsfile" to name a method. The node file can be called using the following url:
 
         URL: /index.php/CONTROLLER/node_jsfile/
 
-This will be load a jsfile.js in the CONTROLLER folder at the node folder.
+This url will execute a jsfile.js in the CONTROLLER folder at the node folder.
 
  /application/node/CONTROLLER/jsfile.js
 
-The node std output  will be passed as the first argument of the "node_jsfile" method in the CONTROLLER:
-       
+The node std output will be passed as the first argument of the "node_jsfile" method in the CONTROLLER:
 
 
 
