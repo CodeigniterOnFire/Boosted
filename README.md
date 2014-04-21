@@ -21,7 +21,7 @@ Just set your model attributes using standard values. The database will be updat
  ----------
  JSON API
 
- On your MODEL just use the onfire_ prefix on a  method, this will enable the method in the controler using Reflexion and Clousure. The output will be a json encoded object of the return value of the model method.
+ On your MODEL just use the onfire_ prefix on a  method, this will enable the method in the controller using Reflexion and Clousure. The output will be a json encoded object of the return value of the model method.
 
     MODEL
 
