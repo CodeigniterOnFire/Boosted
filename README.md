@@ -21,7 +21,7 @@ Just set your model attributes using standard values. The database will be updat
  ----------
  JSON API
 
- On you model just use the onfire_ prefix on a specific method, this will enable the method in the controler using Reflexion the output will be a json encoded object of the return value of the model method.
+ On your model just use the onfire_ prefix on a  method, this will enable the method in the controler using Reflexion and Clousure. The output will be a json encoded object of the return value of the model method.
 
     MODEL
 
@@ -47,14 +47,17 @@ Just set your model attributes using standard values. The database will be updat
 
 
 ----------
-Node.js Calls for high performance calls.
-Just call any method using the following url:
+Node.js  for high performance calls.
+On your model just use the node_jsfile to name a  method. Call any node file using the following url:
 
         URL: /index.php/CONTROLLER/node_jsfile/
 
 This will be load a jsfile.js in the CONTROLLER folder at the node folder.
-The return value will be "echo" Example:
-        /application/node/CONTROLLER/jsfile.js
+
+ /application/node/CONTROLLER/jsfile.js
+
+The node std output  will be passed as  the first argument to the node_jsfile method on the CONTROLLER:
+       
 
 
 
